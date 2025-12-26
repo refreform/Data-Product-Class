@@ -1,0 +1,21 @@
+---
+title: "R Markdown and Leaflet"
+author: "refreform"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Leaflet
+
+```{r leaflet}
+library(leaflet)
+buffalo_ny<- leaflet() %>%
+  addTiles() %>%
+  addMarkers(lat=42.880230, lng=-78.878738, popup="Buffalo!")
+
+buffalo_ny
+```
