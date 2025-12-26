@@ -17,5 +17,5 @@ buffalo_ny<- leaflet() %>%
   addTiles() %>%
   addMarkers(lat=42.880230, lng=-78.878738, popup="Buffalo!")
 
-buffalo_ny
+buffalo_ny 
 ```
