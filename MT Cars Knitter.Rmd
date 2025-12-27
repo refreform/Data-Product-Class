@@ -1,0 +1,15 @@
+---
+title: "R Markdown Presentation & Plotly"
+author: "refreform"
+date: "`r Sys.Date()`"
+output: ioslides_presentation
+---
+
+## MT Cars Plot
+
+```{r setup, echo=FALSE, message=FALSE, warning=FALSE, fig.align='center'}
+data(mtcars)
+library(plotly)
+figure<-plot_ly(mtcars, x = ~wt, y = ~mpg, mode="markers")
+figure
+```
